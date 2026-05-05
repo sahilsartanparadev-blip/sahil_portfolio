@@ -37,7 +37,7 @@ export default function Navigation({ onNavigate }: NavigationProps) {
       {/* Logo */}
       <div className="flex flex-col">
         <span
-          className="font-heading font-bold text-white text-xl tracking-tight leading-normal pt-1"
+          className="font-heading font-bold text-white text-xl leading-none tracking-tight"
           style={{ letterSpacing: '-0.04em' }}
         >
           S&sup2;
