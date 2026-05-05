@@ -9,6 +9,12 @@ interface Project {
   image: string;
 }
 
+import petmeeterImg from '../assets/petmeeter.jpg';
+import smartRingImg from '../assets/smart-ring.jpg';
+import attendanceImg from '../assets/attendance.jpg';
+import grugramImg from '../assets/grugram.jpg';
+import nanavatiImg from '../assets/nanavati.jpg';
+
 const projects: Project[] = [
   {
     category: 'Social Platform',
@@ -21,7 +27,7 @@ const projects: Project[] = [
       'Location-based pet matching algorithm',
       'Firebase Cloud Functions for scalability',
     ],
-    image: `${import.meta.env.BASE_URL}petmeeter.jpg`,
+    image: petmeeterImg,
   },
   {
     category: 'HealthTech / AI',
@@ -34,7 +40,7 @@ const projects: Project[] = [
       'Real-time biometric tracking & visualization',
       'Personalized wellness score algorithm',
     ],
-    image: `${import.meta.env.BASE_URL}smart-ring.jpg`,
+    image: smartRingImg,
   },
   {
     category: 'Enterprise',
@@ -47,7 +53,7 @@ const projects: Project[] = [
       'Automated attendance reports & alerts',
       'Multi-location workforce management',
     ],
-    image: `${import.meta.env.BASE_URL}attendance.jpg`,
+    image: attendanceImg,
   },
   {
     category: 'Civic Tech',
@@ -60,7 +66,7 @@ const projects: Project[] = [
       'Smart duplicate detection system',
       'Real-time civic status updates',
     ],
-    image: `${import.meta.env.BASE_URL}grugram.jpg`,
+    image: grugramImg,
   },
   {
     category: 'E-Commerce',
@@ -73,7 +79,7 @@ const projects: Project[] = [
       'Secure checkout with Stripe integration',
       'Admin inventory management dashboard',
     ],
-    image: `${import.meta.env.BASE_URL}nanavati.jpg`,
+    image: nanavatiImg,
   },
 ];
 
@@ -109,7 +115,7 @@ function ProjectCard({
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              className="w-full h-full object-contain transition-transform duration-700 hover:scale-105"
             />
           </div>
         </div>
