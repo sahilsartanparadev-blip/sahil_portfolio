@@ -21,7 +21,7 @@ const projects: Project[] = [
       'Location-based pet matching algorithm',
       'Firebase Cloud Functions for scalability',
     ],
-    image: '/petmeeter.jpg',
+    image: `${import.meta.env.BASE_URL}petmeeter.jpg`,
   },
   {
     category: 'HealthTech / AI',
@@ -34,7 +34,7 @@ const projects: Project[] = [
       'Real-time biometric tracking & visualization',
       'Personalized wellness score algorithm',
     ],
-    image: '/smart-ring.jpg',
+    image: `${import.meta.env.BASE_URL}smart-ring.jpg`,
   },
   {
     category: 'Enterprise',
@@ -47,7 +47,7 @@ const projects: Project[] = [
       'Automated attendance reports & alerts',
       'Multi-location workforce management',
     ],
-    image: '/attendance.jpg',
+    image: `${import.meta.env.BASE_URL}attendance.jpg`,
   },
   {
     category: 'Civic Tech',
@@ -60,7 +60,7 @@ const projects: Project[] = [
       'Smart duplicate detection system',
       'Real-time civic status updates',
     ],
-    image: '/grugram.jpg',
+    image: `${import.meta.env.BASE_URL}grugram.jpg`,
   },
   {
     category: 'E-Commerce',
@@ -73,7 +73,7 @@ const projects: Project[] = [
       'Secure checkout with Stripe integration',
       'Admin inventory management dashboard',
     ],
-    image: '/nanavati.jpg',
+    image: `${import.meta.env.BASE_URL}nanavati.jpg`,
   },
 ];
 

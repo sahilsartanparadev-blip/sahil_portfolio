@@ -150,7 +150,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             View My Work
           </button>
           <a
-            href="/Sartanpara_Sahil_Resume.pdf"
+            href={`${import.meta.env.BASE_URL}Sartanpara_Sahil_Resume.pdf`}
             download="Sahil_Sartanpara_Resume.pdf"
             className="px-8 py-4 rounded-xl font-semibold text-base transition-all duration-300 hover:border-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.05)] inline-flex items-center justify-center"
             style={{
