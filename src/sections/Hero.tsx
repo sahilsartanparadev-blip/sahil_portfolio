@@ -54,11 +54,11 @@ export default function Hero({ onNavigate }: HeroProps) {
           <span className="block mt-2">
             <span className="relative inline-block">
               {/* Invisible spacer to maintain centered layout size */}
-              <span className="opacity-0 pointer-events-none">Building Scalable Apps</span>
+              <span className="opacity-0 pointer-events-none pb-[0.2em]">Building Scalable Apps</span>
               {/* Animating text */}
               <span
                 ref={line1Ref}
-                className="absolute left-0 top-0 overflow-hidden whitespace-nowrap border-r-[3px] border-transparent text-left"
+                className="absolute left-0 top-0 overflow-hidden whitespace-nowrap border-r-[3px] border-transparent text-left pb-[0.2em]"
                 style={{
                   width: phase >= 3 ? '100%' : '0%',
                   animation:
@@ -79,10 +79,10 @@ export default function Hero({ onNavigate }: HeroProps) {
           {/* Line 2 */}
           <span className="block mt-2">
             <span className="relative inline-block">
-              <span className="opacity-0 pointer-events-none">Faster with AI + Flutter</span>
+              <span className="opacity-0 pointer-events-none pb-[0.2em]">Faster with AI + Flutter</span>
               <span
                 ref={line2Ref}
-                className="absolute left-0 top-0 overflow-hidden whitespace-nowrap border-r-[3px] border-transparent text-left"
+                className="absolute left-0 top-0 overflow-hidden whitespace-nowrap border-r-[3px] border-transparent text-left pb-[0.2em]"
                 style={{
                   width: phase >= 4 ? '100%' : '0%',
                   animation:
